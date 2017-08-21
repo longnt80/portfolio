@@ -53,21 +53,24 @@ h4 {
   text-align: center;
   padding: 1em;
   text-align: center; }
-  .info img {
+  .info > img {
     max-width: 30%;
     border-radius: 50%;
     margin-bottom: 0.5em;
     box-shadow: 0px 2px 2px 1px #bbb; }
     @media (min-width: 768px) {
-      .info img {
+      .info > img {
         max-width: 50%; } }
-  .info .skill {
+  .info .sect {
     margin-top: 2em; }
-    .info .skill span {
-      display: inline-block;
-      background-color: #dedede;
-      padding: 0 0.2em;
-      margin-bottom: 0.2em; }
+    .info .sect span {
+      display: inline-block; }
+  .info .skill span {
+    background-color: #dedede;
+    padding: 0 0.2em;
+    margin-bottom: 0.2em; }
+  .info .tools span img {
+    width: 2em; }
 
 .portfolio-item {
   text-align: center;
@@ -93,7 +96,8 @@ h4 {
     text-align: left;
     padding: 0 1em; }
   .portfolio-item .btn {
-    font-size: 1em; }
+    font-size: 1em;
+    border: none; }
   @media (min-width: 768px) {
     .portfolio-item:first-child {
       margin-top: 0.5em; } }

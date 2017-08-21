@@ -55,7 +55,7 @@ h4 {
   text-align: center;
   padding: 1em;
   text-align: center;
-  img {
+  >img {
     max-width: 30%;
     border-radius: 50%;
     margin-bottom: 0.5em;
@@ -64,15 +64,26 @@ h4 {
       max-width: 50%;
     }
   }
-
-  .skill {
+  .sect {
     margin-top: 2em;
 
     span {
       display: inline-block;
+    }
+  }
+  .skill {
+    span {
       background-color: #dedede;
       padding: 0 0.2em;
       margin-bottom: 0.2em;
+    }
+  }
+  .tools {
+    span {
+
+      img {
+        width: 2em;
+      }
     }
   }
 }
@@ -109,6 +120,7 @@ h4 {
   }
   .btn {
     font-size: 1em;
+    border: none;
   }
   &:first-child {
     @media (min-width: 768px) {
