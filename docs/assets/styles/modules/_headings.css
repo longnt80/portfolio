@@ -1,0 +1,25 @@
+.headings {
+
+  &--center {
+    text-align: center;
+  }
+
+  &--large {
+    font-size: 2.2rem;
+    font-weight: 100;
+  }
+
+  &--medium {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+
+  &--small {
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  &--no-mb {
+    margin-bottom: 0;
+  }
+}

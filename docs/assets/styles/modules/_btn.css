@@ -1,0 +1,18 @@
+.btn {
+  display: inline-block;
+  background-color: $mainOrange;
+  text-decoration: none;
+  padding: .3rem .6rem;
+  color: #FFF;
+  border-radius: .2rem;
+  border: 1px solid transparent;
+  transform: scale(1);
+  transition: transform .1s ease-out;
+
+  &:focus, &:hover {
+    transform: scale(1.05);
+  }
+  &:focus {
+    border: 1px solid $darkOrange;
+  }
+}

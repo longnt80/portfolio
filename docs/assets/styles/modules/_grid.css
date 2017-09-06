@@ -1,0 +1,51 @@
+.container {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 1236px; /* 36px was added because box-sizing: border-box counts the paddings above */
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @mixin atMedium {
+  }
+}
+
+
+/* ----------------
+ row
+ -------------------*/
+.row {
+  @mixin atMedium {
+    margin-right: -50px;
+  }
+
+  &--no-gutters {
+    @mixin atMedium {
+      margin-right: 0;
+    }
+  }
+}
+
+/* ----------------
+ col
+ -------------------*/
+.col {
+  @mixin atMedium {
+    padding-right: 50px;
+  }
+}
+
+.col-4 {
+  @mixin atMedium {
+    width: 33.33%;
+  }
+}
+
+.col-8 {
+  @mixin atMedium {
+    max-width: 66.66%;
+    &--ml-auto {
+      margin-left: auto;
+    }
+  }
+}
