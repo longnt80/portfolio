@@ -628,6 +628,12 @@ img {
     margin: .3rem 0 2rem;
   }
 
+.section__techs-used__item {
+      display: inline-block;
+      margin-left: 4px;
+      margin-right: 4px;
+    }
+
 .section__content--center {
       text-align: center;
     }
