@@ -34,4 +34,8 @@
     padding-top: 0;
   }
 
+  &:nth-of-type(even) {
+    background-color: #EEE;
+  }
+
 }

@@ -636,6 +636,10 @@ img {
     padding-top: 0;
   }
 
+.section:nth-of-type(even) {
+    background-color: #EEE;
+  }
+
 .headings--center {
     text-align: center;
   }
@@ -688,3 +692,5 @@ img {
 .btn:focus {
     border: 1px solid #ab6305;
   }
+
+/*# sourceMappingURL=styles.css.map */
