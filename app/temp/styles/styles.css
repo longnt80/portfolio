@@ -465,66 +465,29 @@ img {
           box-sizing: border-box;
 }
 
-/*a {
-  color: $mainOrange;
-}*/
+a {
+  color: #d59541;
+}
+
+a:hover {
+    color: #ab6305;
+  }
 
 .container {
   padding-left: 18px;
   padding-right: 18px;
   max-width: 1236px; /* 36px was added because box-sizing: border-box counts the paddings above */
-
   margin-left: auto;
   margin-right: auto;
 }
 
 @media (min-width: 800px) {
-  }
 
-/* ----------------
- row
- -------------------*/
-
-@media (min-width: 800px) {
-
-.row {
-    margin-right: -50px
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
 }
-  }
-
-@media (min-width: 800px) {
-
-.row--no-gutters {
-      margin-right: 0
-  }
-  }
-
-/* ----------------
- col
- -------------------*/
-
-@media (min-width: 800px) {
-
-.col {
-    padding-right: 50px
-}
-  }
-
-@media (min-width: 800px) {
-
-.col-4 {
-    width: 33.33%
-}
-  }
-
-@media (min-width: 800px) {
-
-.col-8 {
-    max-width: 66.66%
-}
-    .col-8--ml-auto {
-      margin-left: auto;
-    }
   }
 
 .sticky-section {
@@ -542,7 +505,25 @@ img {
 .summary-info {
   text-align: center;
   margin-bottom: 40px;
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
 }
+
+@media (min-width: 800px) {
+
+.summary-info {
+    margin-right: 30px
+}
+  }
+
+@media (min-width: 800px) {
+
+.summary-info__wrapper {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0
+  }
+  }
 
 .summary-info__avatar {
     border-radius: 50%;
@@ -593,6 +574,11 @@ img {
       display: inline-block;
     }
 
+.projects {
+  -ms-flex-preferred-size: 66.66%;
+      flex-basis: 66.66%;
+}
+
 .section {
   padding: 50px 15px;
   margin-left: -18px;
@@ -642,8 +628,17 @@ img {
     padding-top: 0;
   }
 
-.section:nth-of-type(even) {
+.section:nth-of-type(odd) {
     background-color: #EEE;
+  }
+
+@media (min-width: 800px) {
+    .section:nth-of-type(odd) {
+      background-color: #FFF;
+    }
+    .section:nth-of-type(even) {
+      background-color: #EEE;
+    }
   }
 
 .headings--center {
@@ -693,6 +688,7 @@ img {
 .btn:focus, .btn:hover {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
+    color: #FFF;
   }
 
 .btn:focus {
