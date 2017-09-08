@@ -1,8 +1,0 @@
-.sticky-section {
-  width: 100%;
-
-  @mixin atMedium {
-    position: fixed;
-    top: 0;
-  }
-}
