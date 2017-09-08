@@ -3,7 +3,6 @@
 @import "base/_global";
 @import "base/_mixins";
 @import "modules/_container";
-@import "modules/_sticky-section";
 @import "modules/_summary-info";
 @import "modules/_projects";
 @import "modules/_section";
