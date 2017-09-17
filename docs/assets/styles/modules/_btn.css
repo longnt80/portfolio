@@ -11,6 +11,7 @@
 
   &:focus, &:hover {
     transform: scale(1.05);
+    color: #FFF;
   }
   &:focus {
     border: 1px solid $darkOrange;
